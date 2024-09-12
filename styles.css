@@ -1,62 +1,53 @@
-/* Tipografía y estilo general */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Chomsky', serif;
     background-color: black;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    flex-direction: column;
+    font-family: 'Chomsky', serif;
 }
 
-/* Estilo del título */
-#title {
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.title {
     font-size: 3rem;
+    color: white;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
 }
 
-#title:hover {
+.title:hover {
     transform: translateY(-5px);
 }
 
-/* Estilo del formulario de login (oculto por defecto) */
-.login-form {
+.hidden {
     display: none;
+}
+
+.login-form {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.login-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.login-form label {
-    margin-top: 10px;
-    color: black;
+    margin-top: 20px;
 }
 
 .login-form input {
+    width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    border: none;
 }
 
 .login-form button {
-    margin-top: 20px;
+    width: 100%;
     padding: 10px;
-    background-color: black;
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
